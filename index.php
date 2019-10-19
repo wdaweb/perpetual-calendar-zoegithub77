@@ -105,8 +105,8 @@ if(($month+1)<=12){
 ?>
 
 <h2>
-<a href="perpetual-all.php?month=<?php echo $premonth ?>&year=<?php echo $preyear ?>">上一月</a>
-<a href="perpetual-all.php?month=<?php echo $nextmonth ?>&year=<?php echo $nextyear ?>">下一月</a>
+<a href="?month=<?php echo $premonth ?>&year=<?php echo $preyear ?>">上一月</a>
+<a href="?month=<?php echo $nextmonth ?>&year=<?php echo $nextyear ?>">下一月</a>
 </h2>
     
 <table border="1">
@@ -169,7 +169,7 @@ for($i=0;$i<6;$i++){
 </body>
 </html>
 
-<?
+<?php
 
 function checkSpecialDay($month, $currentDay, $specialDays) {
 
